@@ -10,13 +10,33 @@ class RegistrationScreen extends StatefulWidget {
   _RegistrationScreenState createState() => _RegistrationScreenState();
 }
 
-class _RegistrationScreenState extends State<RegistrationScreen> {
+class _RegistrationScreenState extends State<RegistrationScreen>
+    with SingleTickerProviderStateMixin {
   String email = '';
   String password = '';
   bool isSpinof = false;
   final _auth = FirebaseAuth.instance;
+  late AnimationController _controller;
+  late Animation<double> _animation;
+
   void LoginNavigate() {
     Navigator.pushNamed(context, 'LoginScreen');
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: Duration(seconds: 2),
+      vsync: this,
+    )..repeat(reverse: true);
+    _animation = CurvedAnimation(parent: _controller, curve: Curves.easeInOut);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -34,9 +54,17 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               Flexible(
                 child: Hero(
                   tag: 'logo',
-                  child: Container(
-                    height: 200.0,
-                    child: Image.asset('images/logo.png'),
+                  child: AnimatedBuilder(
+                    animation: _animation,
+                    builder: (context, child) {
+                      return ScaleTransition(
+                        scale: _animation,
+                        child: Container(
+                          height: 200.0,
+                          child: Image.asset('images/logo.png'),
+                        ),
+                      );
+                    },
                   ),
                 ),
               ),
