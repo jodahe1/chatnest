@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, unnecessary_null_comparison
 
-import 'package:firebase1/rounded.dart';
+import 'package:chatnest/rounded.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';

@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last
 
-import 'package:firebase1/rounded.dart';
+import 'package:chatnest/rounded.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 

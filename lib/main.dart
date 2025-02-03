@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:firebase1/screens/chat_screen.dart';
-import 'package:firebase1/screens/login_screen.dart';
-import 'package:firebase1/screens/registration_screen.dart';
-import 'package:firebase1/screens/welcome_screen.dart';
+import 'package:chatnest/screens/chat_screen.dart';
+import 'package:chatnest/screens/login_screen.dart';
+import 'package:chatnest/screens/registration_screen.dart';
+import 'package:chatnest/screens/welcome_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
