@@ -15,6 +15,10 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
   String password = '';
   bool isSpinof = false;
   final _auth = FirebaseAuth.instance;
+  void LoginNavigate() {
+    Navigator.pushNamed(context, 'LoginScreen');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -121,6 +125,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   }
                 },
                 texts: 'Register',
+              ),
+              RoundedButton(
+                materialColor: const Color.fromARGB(255, 90, 255, 68),
+                onCliked: LoginNavigate,
+                texts: 'Login',
               ),
             ],
           ),
