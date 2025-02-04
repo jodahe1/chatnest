@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "716707801615",
+    "project_id": "chatnest-d670a",
+    "storage_bucket": "chatnest-d670a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716707801615:android:3b7e2f402ea616fb8a917a",
+        "android_client_info": {
+          "package_name": "com.example.chatnest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-P4-D7S3W0Lpj13I_NO8mQpzTlcs5lRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
